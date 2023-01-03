@@ -1,0 +1,385 @@
+/*========================
+      Default theme
+==========================
+    Fonts : Teko & Jost
+=========================
+    Colors:
+        Imperial Red:#E63946
+            Honeydew:#F1FAEE
+         Powder Blue:#A8DADC
+        Celadon Blue:#457B9D
+       Prussian Blue:#1D3557
+
+========================*/
+/*=======================
+        html,body
+========================*/
+html,body{
+    height: 100%;
+    
+}
+body{
+    color: #6c7e86;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Teko" , sans-serif;
+}
+p{
+    font-family: "Jost" , sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+section{
+    background: white;
+    overflow: hidden;
+}
+/*=======================
+        buttons
+========================*/
+.btn-general{
+    font-family: "Teko" , sans-serif;
+    border-radius: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 12px 46px;
+    -webkit-transition: all 0.5s;transition: all 0.5s;
+}
+/*========================
+        preloader
+=========================*/
+#preloader{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+#preloader_status{
+    background-image: url("../images/preloaders/preloader.gif");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -64px;
+    margin-top: -64px;
+}
+#home-bg-video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    background: url("../images/home-poster/poster.jpg") no-repeat;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+#home{
+    background: none;
+    height: 100%;
+}
+#home-overlay{
+    background-color: rgb(0,0,0, .8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+#home-content{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+#home-content-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+#home-heading h1{
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+#home-heading h1 span{
+    color: #ffae2c;
+    font-weight: 500;
+}
+#home-text p{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+.btn-home{
+    color: white;
+    border: 1px solid #fff;
+}
+.btn-home:hover , 
+.btn-home:focus{
+    color: white;
+    background-color: #ffae2c; 
+    border: 1px solid #ffae2c;
+}
+#down-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    color: white;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+#down-arrow:hover,
+#down-arrow:focus{
+    color: #ffae2c;
+    font-size: 40px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-bottom: 5px;
+}
+/*========================
+        content boxes
+=========================*/
+.content-box-lg , .content box-md{
+    padding: 60px 0;
+}
+/*========================
+        vertical heading
+=========================*/
+.vertical-heading{
+    margin-top: -20px;
+    margin-left: 20px;
+    
+    
+}
+.vertical-heading h5{
+    color: #ffae2c;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);transform: rotate(-90deg);
+    position: relative;
+    top: 40px;
+    left: -60px;
+   
+}
+.vertical-heading h2{
+    margin-top: -25px;
+    margin-left: 30px;
+    font-size: 44px;
+    font-weight: 200;
+}
+/*========================
+        about 01
+=========================*/
+#about-right {
+    font-size: 18px;
+    
+}
+#about-bottom{
+    margin-top: 5px; 
+    margin-bottom: 20px;
+}
+#about-bottom img{
+    width: 1125px;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+/*========================
+        about 02
+=========================*/    
+#about-02{
+    background-color: #e4e6e3;
+    
+}
+.about-item{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 60px 20px 60px 20px;
+   -webkit-box-shadow: 5px 0 5px rgba( 0,0,0, .4);box-shadow: 5px 0 5px rgba( 0,0,0, .4);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.about-item span{
+    font-size: 25px;
+    display: inline-block;
+}
+.about-item h3{
+    font-size: 30px;
+    margin: 10px;
+}
+.about-item hr{
+    
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+/* hover state */
+.about-item:hover{
+    background-color:#ffae2c;
+    color: white;
+}
+.about-item:hover span{
+    color: white;
+    -webkit-transform: translateY(5px);transform: translateY(5px);
+}
+.about-item:hover hr{
+    background-color: white;
+}
+/* smooth transition */
+.about-item,
+.about-item span,
+.about-itm hr
+{
+    -webkit-transition: all .4s ease-in-out; transition: all .4s ease-in-out;
+}
+/*========================
+        team
+=========================*/   
+#team left p{
+    margin-top: 30px;
+}
+.team-member{
+    margin: 10px;
+    position: relative;
+}
+.team-member-overlay{
+    background-color: rgb(0,0,0,.8);
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    display: table;
+    opacity: 0;
+    -webkit-transition: all 500ns linear;transition: all 400ns linear;
+}
+.team-member-info{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.team-member-info h6{
+    color: #ffae2c;
+    font-size: 20px;
+    font-family: 'Jost',sans-serif;
+    margin: 40 0 0 0;
+}
+.team-member-info p{
+    color: white;
+}
+.team-member img{
+    width: 
+    height: 100px;
+}
+.team-member:hover .team-member-overlay{
+    opacity: 1;
+}
+/*========================
+        social icons
+=========================*/  
+ul.social-list{
+    padding: 0;
+    
+}
+ul.social-list li{
+    display: inline-block;
+    padding: 0;
+}
+ul.social-list li a{
+      display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+ul.social-list li a:hover{
+    background-color: #ffae2c;
+}
+/*========================
+        owl-carausel nav
+=========================*/
+.owl-theme .owl-nav [class*=owl-] span{
+    color: #000;
+    font-size: 40px;
+    background: none;
+    transition: all 300ms;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: none;
+}
+.owl-theme .owl-nav [class*=owl-] span:hover{
+    color: #ffae2c;
+}
+/*========================
+         skills
+=========================*/
+.skill{
+    margin-bottom: 20px;
+}
+skill h4{
+    margin: 0px;
+    line-height: 50px;
+    font-weight: normal;
+}
+.progress{
+    
+    height: 25px;
+    background-color: #e4e6e3;
+    border-radius: 0;
+    overflow: visible;
+}
+#progress-elements{
+    padding: 0 85 0 75;
+}
+.progress-bar{
+    background-color: #ffae2c;
+    position: relative;
+    overflow: visible;
+}
+.progress-bar span{
+    font-weight: 600;
+    font-family: 'Jost',sans-serif;
+    background-color: #555;
+    position: absolute;
+    padding: 4px;
+    right: -20px;
+    top: -50px;
+}
+.progress-bar span:before{
+    content: '';
+    border-top: 10px solid #555;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -15px;
+}
+
+
+
